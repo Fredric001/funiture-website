@@ -517,7 +517,7 @@
     }
     .pagination-cont{
       margin-top: 20px;
-      /* transform: translateX(-50px); */
+      /* transform: t  ranslateX(-50px); */
       transform: translateY(130px);
     }
     .go-cart{
