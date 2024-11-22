@@ -114,94 +114,66 @@
           </div>
 
           <div id="my-form" class="col-lg-5" data-aos="fade">
-            <form action="forms/quote.php" method="post" class="php-email-form">
+            <!-- Login Form -->
+            <form id="login-form" action="forms/quote.php" method="post" class="php-email-form">
               <h3>LogIn To Account</h3>
-              
               <div class="row gy-3">
-
                 <div class="col-md-12" style="display: flex; gap: 10px;">
                   <input type="text" name="name" class="form-control" placeholder="First name" required>
-                  <input type="text" name="name" class="form-control" placeholder=" Second name" required>
-
+                  <input type="text" name="name" class="form-control" placeholder="Second name" required>
                 </div>
-
-                <div class="col-md-12 ">
+                <div class="col-md-12">
                   <input type="email" class="form-control" name="email" placeholder="Email" required>
                 </div>
-
                 <div class="col-md-12">
                   <input type="text" class="form-control" name="phone" placeholder="Phone" required>
                 </div>
-
                 <div class="col-md-12" style="display: flex; gap: 10px;">
-                  <input type="text" class="form-control" name="password" placeholder="password" required>
-                  <!-- <input type="text" class="form-control" name="password" placeholder="confirm password" required> -->
+                  <input type="password" class="form-control" name="password" placeholder="Password" required>
                 </div>
                 <h6>or SignIn with</h6>
                 <div>
-                  &#128513
-                  &#128513
-                  &#128513
+                  &#128513; &#128513; &#128513;
                 </div>
-
-                  <div class="col-md-12 text-center">
-                  <div class="loading">Loading</div>
-                  <div class="error-message"></div>
-                  <div class="sent-message">Your quote request has been sent successfully. Thank you!</div>
-
-                  <button type="submit" >LogIn</button>
-                  <button id="create-Btn" style="width: 100px; height: 44px; border: 1px solid #feb900; background-color: white; color: #feb900;">SignUP</button>
+                <div class="col-md-12 text-center">
+                  <button type="submit">LogIn</button>
+                  <button id="create-Btn" type="button" style="width: 100px; height: 44px; border: 1px solid #feb900; background-color: white; color: #feb900;">SignUP</button>
                 </div>
-
               </div>
             </form>
-            <!-- registration form -->
-            <form id="create-form"  action="forms/quote.php" method="post" class="php-email-create" style="background-color: #feb900 ; position: absolute; width: 515px; height: 464px; transform: translateY(-464px);">
-              <h3>Create  Account</h3>
-              
+          
+            <!-- Registration Form -->
+            <form id="create-form" action="forms/quote.php" method="post" class="php-email-create" style="display: none; background-color: #feb900;  width: 515px; height: 464px;">
+              <h3>Create Account</h3>
+              <br>
               <div class="row gy-3">
-
                 <div class="col-md-12" style="display: flex; gap: 10px;">
                   <input type="text" name="name" class="form-control" placeholder="First name" required>
-                  <input type="text" name="name" class="form-control" placeholder=" Second name" required>
-
+                  <input type="text" name="name" class="form-control" placeholder="Second name" required>
                 </div>
-
-                <div class="col-md-12 ">
+                <div class="col-md-12">
                   <input type="email" class="form-control" name="email" placeholder="Email" required>
                 </div>
-
                 <div class="col-md-12">
                   <input type="text" class="form-control" name="phone" placeholder="Phone" required>
                 </div>
-
                 <div class="col-md-12" style="display: flex; gap: 10px;">
-                  <input type="text" class="form-control" name="password" placeholder="password" required>
-                  <input type="text" class="form-control" name="password" placeholder="confirm password" required>
+                  <input type="password" class="form-control" name="password" placeholder="Password" required>
+                  <input type="password" class="form-control" name="confirm-password" placeholder="Confirm Password" required>
                 </div>
                 <h6>or SignUp with</h6>
                 <div>
-                  &#128513
-                  &#128513
-                  &#128513
+                  &#128513; &#128513; &#128513;
                 </div>
-
-                
-
                 <div class="col-md-12 text-center">
-                  <div class="loading">Loading</div>
-                  <div class="error-message"></div>
-                  <div class="sent-message">successfull</div>
-
-                  
                   <button style="width: 100px; height: 44px; border: 1px solid #feb900; background-color: white; color: #feb900;">SignUP</button>
-                  <button id="log-Btn" type="submit">LogIn</button>
+                  <button id="log-Btn" type="button" style="width: 100px; height: 44px; border: 1px solid white; background-color: white; color: #feb900;">LogIn</button>
                 </div>
-
               </div>
             </form>
-          </div><!-- End Quote Form -->
-
+          </div>
+         
+         
         </div>
 
       </div>
