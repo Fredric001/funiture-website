@@ -548,11 +548,21 @@ section {
   padding: 30px;
   height: 100%;
 }
+.get-started .php-email-create {
+  background: #fff;
+  padding: 30px;
+  height: 100%;
+  display: none;
+}
 
 @media (max-width: 575px) {
   .get-started .php-email-form {
     padding: 20px;
   }
+  .get-started .php-email-create {
+    padding: 20px;
+  }
+  
 }
 
 .get-started .php-email-form h3 {
