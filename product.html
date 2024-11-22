@@ -689,7 +689,16 @@
 <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
 <div id="preloader"></div>
-    <script src="./cart.js"></script>
+    <script >
+
+      let mainTwoCont= document.getElementById("main-two-cont")
+      let goToCart= document.getElementById("go-Cart")
+      
+      goToCart.addEventListener("click",()=>{
+          mainTwoCont.style.display="grid"
+          mainTwoCont.style.position="absolute" 
+      })
+      </script>
 
     <script src="./assets/js/main.js"></script>
   </body>
