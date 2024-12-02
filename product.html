@@ -49,6 +49,7 @@
             <br />
             <h2>Upto 55% off</h2>
             <br />
+            
             <p>Grab Your Trend Today and stay ahead of the rest</p>
             
             <a href="./our-store.html"> Go Back</a>
@@ -569,16 +570,23 @@
           <a href="#" class="next">&#62;</a>
         </div>
       </main>
+
+
+      <!-- payment and terms -->
       <main class="main-two-cont" id="main-two-cont" style=" height: 170vh; overflow: scroll; scroll-behavior: smooth; scrollbar-width: none; scroll-snap-align: start;">
         <div class="cart-cont">
-          <h3>Order Details</h3>
+          <ul style="display: flex; justify-content: space-between;">
+            <h3>Order Details</h3>
+            <span class="close-payment-btn" id="close-payment-btn">*</span>
+          </ul>
+          
           <hr />
           <ul class="quantity">
             <h4 style="margin-top: 20px">Quantity</h4>
             <ul>
-              <button>-</button>
-              <p>2</p>
-              <button>+</button>
+              <button id="decrease-btn">-</button>
+              <p id="count-place">0</p>
+              <button  id="increase-btn">+</button>
             </ul>
           </ul>
           <ul class="type">
@@ -591,11 +599,11 @@
           </ul>
           <ul class="prize">
             <span>Prize</span>
-            <span class="second-raw">$1,798.00</span>
+            <span class="second-raw" id="item-price">2</span>
           </ul>
           <ul class="discout">
             <span>Dicount Given</span>
-            <span class="second-raw">$1,798.00</span>
+            <span class="second-raw">$0,000.00</span>
           </ul>
           <ul class="transport">
             <span>Delivery</span>
@@ -642,7 +650,7 @@
                 <label for="expiry">Account pin</label>
                 <input type="number" placeholder="123" id="expiry" name="expiry" required style="width: 150px;" />
               </div>
-              <div class="col">
+              <div class="col" id="">
                 <label for="cvv">Confirm pin</label>
                 <input
                   type="number"
@@ -740,15 +748,8 @@
 <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
 <div id="preloader"></div>
-    <script >
+    <script src="./assets/sub-pages/cart.js" >
 
-      let mainTwoCont= document.getElementById("main-two-cont")
-      let goToCart= document.getElementById("go-Cart")
-      
-      goToCart.addEventListener("click",()=>{
-          mainTwoCont.style.display="grid"
-          mainTwoCont.style.position="absolute" 
-      })
       </script>
 
     <script src="./assets/js/main.js"></script>
